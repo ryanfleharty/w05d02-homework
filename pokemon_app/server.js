@@ -6,6 +6,8 @@ const bodyParser = require("body-parser")
 
 const Pokemon = require("./models/pokemon")
 
+app.use(express.static("public"));
+
 app.use(bodyParser.urlencoded({extended: false}))
 
 
@@ -16,13 +18,6 @@ app.get("/pokemon", (req, res) => {
 app.get("/pokemon/:id", (req, res) => {
 	res.render("show.ejs" ,{pokemon:Pokemon[req.params.id]})
 })
-
-
-
-
-
-
-
 
 
 
