@@ -15,6 +15,11 @@
 <body>
   
   <h1>See All The Pokemon</h1>
+  <ul>
+    <% pokemonList.forEach(pokemon => { %>
+      <li> <%= pokemon.name %> </li>
+    <% }); %>
+  </ul>
 
 </body>
 </html>
