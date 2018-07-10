@@ -15,5 +15,10 @@
 <body>
 	<h1>Pokédex</h1>
 
+	<ul>
+		<% for(let i = 0; i < pokemonList.length; i++){ %>
+			<li><%=pokemonList[i].name%></li>
+		<% } %>
+	</ul>
 </body>
 </html>
