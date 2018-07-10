@@ -2,16 +2,24 @@
 <html>
 <head>
 	<title></title>
-</head>
-<body>
-	<h1>See All The Pokemon!</h1>
-	
+
 	<style type="text/css">
 		body {
   			color: blanchedalmond;
  			 background-color: steelblue;
 			}
 	</style>
+</head>
+<body>
+	<h1>See All The Pokemon!</h1>
+	
+	<ul>
+            <% for(let i = 0; i < pokeList.length; i++){ %>
+              <li>
+                   <a href="/pokemon/<%=i%>"><%=pokeList[i].name; %></a>
+                   
+            <% } %>
+    </ul>
 
 
 
