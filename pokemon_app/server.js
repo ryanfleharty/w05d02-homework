@@ -9,7 +9,9 @@ app.get('/pokemon', (req, res) => {
 	res.render('index.ejs', {pokemonList: Pokemon});
 });
 
-
+app.get('/pokemon/:id', (req, res) => {
+	res.send(req.params.id);
+});
 
 
 
