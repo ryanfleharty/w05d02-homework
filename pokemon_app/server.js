@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 
 app.get("/pokemon", (req, res) => {
-	res.send(Pokemon)
+	res.render("index.ejs", {})
 });
 
 
