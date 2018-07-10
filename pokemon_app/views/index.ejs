@@ -6,7 +6,10 @@
         body{
         	color: blanchedalmond;
         	background-color: steelblue;
-        	}</style>
+        	}
+        a{
+        	margin: 0px 0px 100px 0px;
+        }</style>
     </head>
     <body>
         <h1>See all the Pokemon!</h1>
@@ -14,12 +17,12 @@
         <ul>
         	<% for(let i = 0; i < Pokemon.length; i++){ %>
         	<li><%=Pokemon[i].name%></li>
+        	<a href="/pokemon/<%=i%>">I choose You!</a> 
         	<% } %>
         </ul>
         
     </body>
 </html>
-
 
 
 
