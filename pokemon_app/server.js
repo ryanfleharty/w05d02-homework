@@ -4,11 +4,14 @@ const app = express();
 
 const bodyParser = require("body-parser")
 
+const Pokemon = require("./models/pokemon")
 
 app.use(bodyParser.urlencoded({extended: false}))
 
 
-
+app.get("/pokemon", (req, res) => {
+	res.send(Pokemon)
+});
 
 
 
