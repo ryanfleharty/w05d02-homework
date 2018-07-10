@@ -1,6 +1,6 @@
 const express = require('express');
 
-const pokemon = require('./models/pokemon')
+const pokemon = require('./models/pokemon');
 
 const app = express();
 const port = 3000;
@@ -16,8 +16,13 @@ app.get('/pokemon', (req, res) => {
   res.render('index.ejs', {pokemonList:pokemon});
 })
 
-app.get('/pokemon/:id', (req, res) =>{
-  res.send(req.params.id);
+app.get('/pokemon/:name', (req, res) =>{
+  // res.send(req.params.name);
+  pokemon.forEach(element => {
+    if (element.name === req.params.name) {
+      res.render('show.ejs', {pokemon:element})
+    }
+  });
 })
 
 app.listen(port, () => {
