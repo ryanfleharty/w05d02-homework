@@ -12,7 +12,12 @@
 			}
 		</style>
 	</h1>
-
+	<ul>
+		 <% for(let i = 0; i < pokemonList.length; i++) { %>
+		 <li><h3> <%= pokemonList[i].name %> </h3></li>
+  		<% } %>
+  	</ul>
+	
 
 </body>
 </html>
