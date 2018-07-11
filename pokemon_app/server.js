@@ -1,15 +1,18 @@
 const express = require('express');
 const app = express();
 
-const pokemon = require('./models/pokemon.js');
+const Pokemon = require('./models/pokemon.js');
 
 app.get('/', (req,res) => {
 	res.send('Welcome to the Pokemon app!');
 })
 
 app.get('/pokemon', (req,res) => {
-	res.send(pokemon);
-})
+	console.log(Pokemon);
+	res.render('index.ejs', {
+	pokemon:Pokemon
+});
+});
 
 
 
