@@ -4,7 +4,9 @@ const Pokemon = require("./models/pokemon");
 
 app.get('/pokemon', (req, res) => {
 	//res.send('Welcome to the Pokemon App!')
-	res.render('index.ejs');
+	res.render('index.ejs', {
+		pokemon: Pokemon
+	});
 });
 
 app.get("/pokemon/:index", (req, res) => {
