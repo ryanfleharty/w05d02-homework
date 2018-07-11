@@ -8,7 +8,6 @@ const pokemon = require('./models/pokemon');
 app.use('/css', express.static('css'))
 
 
-
 app.get('/', (req, res) => {
   res.send('Welcome to the Pokemon App!')
 });
