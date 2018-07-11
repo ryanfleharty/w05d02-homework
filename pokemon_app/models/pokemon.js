@@ -8,3 +8,7 @@ const pokemon = [ {name: "Bulbasaur", img: "http://img.pokemondb.net/artwork/bul
 
 
 module.exports = pokemon;
+
+
+
+
