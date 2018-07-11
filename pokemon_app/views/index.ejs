@@ -4,17 +4,19 @@
 	<title></title>
 </head>
 <body>
-	<h1>See All The Pokemon
+	<h1>See All The Pokemon</h1>
 		<style type="text/css">
 			body {
   			color: blanchedalmond;
   			background-color: steelblue;
-			}
+  			text-align: center;
+  			margin-top: 100px;
+  			}
 		</style>
-	</h1>
-	<ul>
+	
+	<ul style ="list-style-type: none;">
 		 <% for(let i = 0; i < pokemonList.length; i++) { %>
-		 <li><h3> <a href="/pokemon/<%=i%>"> <%= pokemonList[i].name %> </a></h3></li>
+		 <li><h3> <a href="/pokemon/<%=i%>" style="text-decoration: none;"> <%= pokemonList[i].name %> </a></h3></li>
   		<% } %>
   	</ul>
 	
