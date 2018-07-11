@@ -2,23 +2,19 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
-	<style type="text/css">
-		body {
-		  color: blanchedalmond;
-		  background-color: steelblue;
-		  font-family: 'Neucha', cursive;	
-		  font-size: 60px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<title>POKÉMON</title>
 </head>
-<body>
+<header>
+	<div>
 	<h1>Pokédex</h1>
-
-	<ul>
-		<% for(let i = 0; i < pokemonList.length; i++){ %>
-			<a href="/Pokemon/<%=i%>"><li><%=pokemonList[i].name%></li></a>
-		<% } %>
-	</ul>
+		<ul>
+			<% for(let i = 0; i < pokemonList.length; i++){ %>
+				<a href="/Pokemon/<%=i%>"><li><%=pokemonList[i].name%></li></a>
+			<% } %>
+		</ul>
+	</div>
+</header>
+<body>
 </body>
 </html>

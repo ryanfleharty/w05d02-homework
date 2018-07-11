@@ -4,6 +4,8 @@ const PORT = 3000;
 
 const Pokemon = require('./models/pokemon');
 
+app.use(express.static('public'))
+
 
 app.get('/pokemon', (req, res) => {
 	res.render('index.ejs', {pokemonList: Pokemon});

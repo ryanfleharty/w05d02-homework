@@ -1,0 +1,19 @@
+body {
+	color: blanchedalmond;
+	font-family: 'Neucha', cursive;	
+	font-size: 60px;
+	text-align: center;
+	background-image: url('/images/pokemon.jpg');
+	background-repeat: no-repeat;
+}
+
+li {
+	font-family: 'Neucha', cursive;	
+	font-size: 40px;
+	text-align: center;
+	list-style-type: none;
+}
+
+header {
+	margin-bottom: px;
+}
