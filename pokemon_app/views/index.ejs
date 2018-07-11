@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style type="text/css">
+    body {
+      color: blanchedalmond;
+      background-color: steelblue;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>See All the Pokemon!</h1>
+      <ul>
+        <% for(let i = 0; i < thesePokemon.length; i++) %>
+          <li><%=thesePokemon[i].name%></li>
+
+      </ul>
+
+  </body>
+</html>
