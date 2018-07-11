@@ -5,7 +5,7 @@ const pokemon = require('./models/pokemon');
 
 
 
-
+app.use('/css', express.static('css'))
 
 
 
@@ -28,7 +28,7 @@ app.get('/pokemon/:id', (req, res) => {
 });
 
 
-
+app.use('/css', express.static('css'))
 
 
 
