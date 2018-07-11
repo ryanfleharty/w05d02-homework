@@ -1,19 +1,50 @@
 body {
-	color: blanchedalmond;
+	background-image: url('/images/pokemon.png');
+	background-repeat: no-repeat;
+	color: skyblue;
 	font-family: 'Neucha', cursive;	
 	font-size: 60px;
 	text-align: center;
-	background-image: url('/images/pokemon.jpg');
-	background-repeat: no-repeat;
+	-webkit-text-stroke: 0.20px black;
+  	background-size: cover;
 }
 
-li {
+li, ul {
 	font-family: 'Neucha', cursive;	
-	font-size: 40px;
+	font-size: 25px;
+	-webkit-text-stroke: 0px;
 	text-align: center;
 	list-style-type: none;
+	margin: 0;
 }
 
-header {
-	margin-bottom: px;
+h1 {
+	margin: 0 auto;
+}
+
+h2 {
+	font-family: 'Neucha', cursive;	
+	font-size: 60px;
+	color: black;
+	-webkit-text-stroke: 0px;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+}
+
+a {
+	font-family: 'Neucha', cursive;	
+	font-size: 40px;
+	-webkit-text-stroke: 0px;
+	text-align: center;
+	margin: 0;
+}
+
+.individual {
+	background-image: none;
+	color: skyblue;
+	font-family: 'Neucha', cursive;	
+	font-size: 60px;
+	text-align: center;
+	-webkit-text-stroke: 0.20px black;
 }
