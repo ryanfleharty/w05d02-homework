@@ -3,7 +3,8 @@ const app = express();
 const Pokemon = require("./models/pokemon");
 
 app.get('/pokemon', (req, res) => {
-	res.send('Welcome to the Pokemon App!')
+	//res.send('Welcome to the Pokemon App!')
+	res.render('index.ejs');
 });
 
 app.get("/pokemon/:index", (req, res) => {
