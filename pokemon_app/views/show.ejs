@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
 	<title></title>
 </head>
 <body>
+	<h1>Gotta Catch 'Em All</h1>
 
-	<h1>Pokemon Show Page</h1>
+	
 
-	<h3>Pokemon</h3>
+	<ul>
+		
+		 <%for(let i = 0; i < pokemon.length; i++){%>
+		 	<li><a href='/pokemon/<%=i%>'><%=pokemon[i].name%>
+		 	</a>
+			<h2><%=pokemon[i].name%>
+				<img src=<%=pokemon[i].img%>>
+			</h2>
+
+			<a href=<%"/pokemon/index.ejs"%>>Index Page</a>
+
+		 </li>
+		<%}%>
+		
+	
+
+
+	</ul>
+
+
+
+
+
+
+	<style type="text/css">
+		body {
+			color: blanchedalmond;
+			background-color: steelblue;
+		}
+		h1 {
+			font-family: 'Luckiest Guy', cursive;
+		}
+	</style>
+
 
 
 </body>
