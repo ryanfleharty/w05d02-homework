@@ -1,4 +1,9 @@
 body {
   	color: blanchedalmond;
  	background-color: steelblue;
+ 	text-align: center;
+ 	background-image: url("/pokebackground.jpg");
+}
+ul {
+  list-style-type: none;
 }
