@@ -15,6 +15,7 @@ body {
 		<% for (let i = 0; i < pokemon.length; i++) { %>
 		<li>
 			<%=pokemon[i].name%>
+			<a href="/pokemon/<%=i%>">Go to Pokemon Page</a>
 		</li>
 
 		<% } %>
