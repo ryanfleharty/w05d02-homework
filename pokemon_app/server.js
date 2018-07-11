@@ -11,7 +11,7 @@ app.get('/pokemon', (req, res) => {
 
 app.get("/pokemon/:index", (req, res) => {
 	res.send(Pokemon[req.params.index]);
-	console.log(Pokemon[req.params.index]);
+	
 });
 
 
