@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const Pokemon = require("./models/pokemon");
 
+
+app.use(express.static('views'));
+
 app.get('/pokemon', (req, res) => {
 	//res.send('Welcome to the Pokemon App!')
 	res.render('show.ejs', {
