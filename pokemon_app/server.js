@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/pokemon", (req, res) => {
-  res.send(pokemon);
+  res.render("show.ejs");
 });
 
 app.listen(PORT, () => {
