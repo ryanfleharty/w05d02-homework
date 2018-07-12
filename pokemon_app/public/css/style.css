@@ -1,0 +1,109 @@
+body {
+	background-image: url('/images/pokemon.png');
+	background-repeat: no-repeat;
+	color: skyblue;
+	font-family: 'Neucha', cursive;	
+	font-size: 50px;
+	text-align: center;
+	-webkit-text-stroke: 0.20px black;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-position: center center;
+}	
+
+li, ul {
+	font-family: 'Neucha', cursive;	
+	font-size: 25px;
+	-webkit-text-stroke: 0px;
+	text-align: center;
+	list-style-type: none;
+	margin: 0px;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+li {
+	background-image: url('/images/pokeball.png');
+	background-size: cover;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	width: 224px;
+  	margin-right: -2px;
+  	margin-left: -2px;
+}
+
+h1 {
+	margin: 0px;
+}
+
+h2 {
+	font-family: 'Neucha', cursive;	
+	font-size: 50px;
+	color: black;
+	-webkit-text-stroke: 0px;
+	text-align: center;
+	list-style-type: none;
+	margin: 0px;
+}
+
+a {
+	font-family: 'Neucha', cursive;
+	line-height: 26px;
+	font-size: 18px;
+	-webkit-text-stroke: 0px;
+	text-align: center;
+	margin: 0px;
+}
+
+.individual {
+	background-image: none;
+	color: skyblue;
+	font-family: 'Neucha', cursive;	
+	font-size: 50px;
+	text-align: center;
+	-webkit-text-stroke: 0.20px black;
+	background-attachment: fixed;
+  	background-position: center center;
+}
+
+.new {
+	background-image: url('/images/pokemon2.png');
+	color: skyblue;
+	font-family: 'Neucha', cursive;	
+	font-size: 50px;
+	text-align: center;
+	-webkit-text-stroke: 0.20px black;
+	background-attachment: fixed;
+  	background-position: center center;
+}
+
+form {
+	display: inline-block;
+}
+
+input {
+	background-color: yellow;
+	font-size: 10px;
+	border-radius: 10px;
+}
+
+.new {
+	text-align: center;
+
+}
+
+br {
+	display: block; 
+  	content: ""; 
+  	margin-top: 15px;
+
+}
+
+.pokemon {
+	display: inline-block;
+}
+
+.add {
+	font-size: 25px;
+	text-decoration: none;
+}

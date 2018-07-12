@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<title>POKÉMON</title>
+</head>
+<header>
+	<h1>Ash's Pokédex</h1>
+	<h2><a class="add" href="/pokemon/new">> Add A Pokémon! <</a></h2></br>
+		<ul>
+			<% for(let i = 0; i < pokemonList.length; i++){ %>
+				<li><a href="/pokemon/<%=i%>"><%=pokemonList[i].name%></a>
+					<form method="POST" action="/pokemon/<%=i%>?_method=DELETE">
+						<input type="submit" value="delete">
+                	</form>
+                	<a href="/pokemon/<%=i%>/edit">
+						<input type="submit" value="edit">
+                	</a></li>
+			<% } %>
+		</ul>
+</header>
+<body>
+</body>
+</html>
