@@ -6,14 +6,19 @@
 	<title>POKÉMON</title>
 </head>
 <header>
-	<div>
-	<h1>Pokédex</h1>
+	<h1>Ash's Pokédex</h1>
+	<h2><a class="add" href="/pokemon/new">> Add A Pokémon! <</a></h2></br>
 		<ul>
 			<% for(let i = 0; i < pokemonList.length; i++){ %>
-				<a href="/Pokemon/<%=i%>"><li><%=pokemonList[i].name%></li></a>
+				<li><a href="/pokemon/<%=i%>"><%=pokemonList[i].name%></a>
+					<form method="POST" action="/pokemon/<%=i%>?_method=DELETE">
+						<input type="submit" value="delete">
+                	</form>
+                	<a href="/pokemon/<%=i%>/edit">
+						<input type="submit" value="edit">
+                	</a></li>
 			<% } %>
 		</ul>
-	</div>
 </header>
 <body>
 </body>

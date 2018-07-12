@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<title>
+		
+	</title>
+</head>
+<body class="individual">
+	<h1>Personalize Your Pokémon!</h1>
+	<form method="POST" action="/pokemon/<%=id%>?_method=PUT">
+		Name: <input type="text" name="name" value="<%=pokemon.name%>"/>
+		Image: <input type="text" name="img" value="<%=pokemon.img%>"/>
+		<input type="submit" value="Submit Changes"/>
+	</form>
+
+</body>
+</html>
