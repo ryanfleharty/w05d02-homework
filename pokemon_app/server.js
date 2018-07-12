@@ -38,7 +38,7 @@ app.get("/pokemon/:index/edit", (req, res) => {
 		index: req.params.index 
 	})
 })
-app.put("/pokemon/:index/edit", (req, res) => {
+app.put("/pokemon/:index", (req, res) => {
 	pokemon[req.params.index] = req.body;
 	res.redirect("/pokemon");
 });
