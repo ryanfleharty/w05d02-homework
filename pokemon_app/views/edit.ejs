@@ -5,13 +5,11 @@
 </head>
 <body>
 	<h1>Edit Your Pokething!</h1>
-	<form method="POST" action="/pokemon/<%=index%>?_method=PUT">
+	<form method="POST" action="/pokemon/<%= id %>?_method=PUT">
 		
-		<h2>Pokemon name: <%= pokemon.name %></h2>
-	
-		<img src="<%= pokemon.img %>"><br/>
+		Name: <input type="text" value="<%=pokemon.name%>"/><br/>
+		PokeImage URL: <input type="text" value="<%=pokemon.img%>"/><br/>
 
-		<a href="/pokemon">PokeHome</a>
 		<br/>
 			<form >
 				<input type="submit" name="" value="Submit Changes"/>

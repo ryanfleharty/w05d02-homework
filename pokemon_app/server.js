@@ -24,15 +24,19 @@ app.get("/pokemon/:id", (req, res) => {
 	res.render("show.ejs" ,{pokemon:Pokemon[req.params.id]})
 })
 
-app.get("/pokemon/:index/edit", (req, res) =>{
-  res.render("edit.ejs", {pokemon: Pokemon[req.params.id],
-    index:req.params.id})
+app.get("/pokemon/:id/edit", (req, res) =>{
+  res.render("edit.ejs", {pokemon: Pokemon[req.params.id], id:req.params.id})
 
 });
 
-app.delete('/:index', (req, res) => {
+app.put("/pokemon/:id", (req, res) => {
+  Pokemon[req.params.id] = req.body;
+  res.redirect("/pokemon");
+
+})
+
+app.delete('/pokemon/:id', (req, res) => {
   Pokemon.splice(req.params.id, 1);
-  console.log(req.params.id, ' this is req.params')
   res.redirect('/pokemon')
 })
 
