@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>pokemonV2-show/DavidEpps.GA</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <style type="text/css">
+      body {
+              color: blanchedalmond;
+              background-color: steelblue;
+            }
+    </style>
   </head>
   <body>
   	
-  	<h1>
+  	<h1>Gotta Catch 'Em All!</h1>
+  	<h2>Name: <%= pokemon.name %></h2>
+  	<img src="<%=pokemon.img%>" alt="<%=pokemon.name%>" height=200 width="200">
+  	<a href="/pokemon">Return</a>
   </body>
 </html>
