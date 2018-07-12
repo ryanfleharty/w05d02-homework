@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pokemon</title>
+  <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+  
+  <h1>See All The Pokemon</h1>
+  <ul>
+    <% pokemonList.forEach(pokemon => { %>
+      <li> <a href="/pokemon/<%= pokemon.name %>">  <%= pokemon.name %> </li>
+      <form method="POST" action="/pokemon/<%=pokemonList.indexOf(pokemon)%>?_method=DELETE">
+        <button type="submit"> Delete </button>
+      </form>
+      <a href="/pokemon/<%=pokemonList.indexOf(pokemon)%>/edit"><button>Edit</button></a>
+    <% }); %>
+  </ul>
+
+</body>
+</html>
