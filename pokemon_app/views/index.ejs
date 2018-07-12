@@ -13,6 +13,10 @@
   <ul>
     <% pokemonList.forEach(pokemon => { %>
       <li> <a href="/pokemon/<%= pokemon.name %>">  <%= pokemon.name %> </li>
+      <form method="POST" action="/pokemon/<%=pokemonList.indexOf(pokemon)%>?_method=DELETE">
+        <button type="submit"> Delete </button>
+      </form>
+      <a href="/pokemon/<%=pokemonList.indexOf(pokemon)%>/edit"><button>Edit</button></a>
     <% }); %>
   </ul>
 
