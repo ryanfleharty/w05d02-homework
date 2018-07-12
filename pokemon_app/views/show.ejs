@@ -8,18 +8,19 @@
 <body>
 	<h1>Gotta Catch 'Em All</h1>
 
-	
+	<a href=<%"/pokemon/index.ejs"%>>Index Page</a>
 
 	<ul>
 		
 		 <%for(let i = 0; i < pokemon.length; i++){%>
-		 	<li><a href='/pokemon/<%=i%>'><%=pokemon[i].name%>
-		 	</a>
+		 	<li><a href='/pokemon/<%=i%>'><!-- <%=pokemon[i].name%> -->
 			<h2><%=pokemon[i].name%>
+				<br>
 				<img src=<%=pokemon[i].img%>>
 			</h2>
+		 	</a>
 
-			<a href=<%"/pokemon/index.ejs"%>>Index Page</a>
+			
 
 		 </li>
 		<%}%>
