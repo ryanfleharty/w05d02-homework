@@ -1,0 +1,12 @@
+body {
+	background-image: url("https://orig00.deviantart.net/32ba/f/2012/343/3/9/pokemon_background_by_iwildblood-d5nhuuq.png");
+	background-size: cover;
+	font-family: 'Gaegu', cursive;
+	font-size: 24px;
+}
+.mt-3 {
+	margin-top: $spacer !important;
+}
+img {
+	border: 2px solid black;
+}
