@@ -25,7 +25,9 @@ app.get("/pokemon/:id", (req, res) => {
 })
 
 app.get("/pokemon/:id/edit", (req, res) =>{
-  res.render("edit.ejs", {pokemon: Pokemon[req.params.id], id:req.params.id})
+  res.render("edit.ejs", {
+  	pokemon: Pokemon[req.params.id], 
+  	id:req.params.id})
 
 });
 
