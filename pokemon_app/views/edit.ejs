@@ -8,47 +8,22 @@
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
 	<title></title>
-<!-- 	<style type="text/css">
-		body {
-			color: blanchedalmond;
-			background-color: steelblue;
-			font-family: 'Gaegu', cursive;
-		}
-	</style> -->
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Gotta Catch 'Em All</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<h2><%= pokemon.name %></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<img src="<%= pokemon.img %>">
-			</div>
-		</div>
-		<div class="row mt-3">
-			<div class="col-sm-12">
-				<a href="/pokemon/<%=id%>/edit">EDIT</a>
-			</div>
-		</div>
-		<div class="row mt-3">
-			<div class="col-sm-12">
-				<a href="/pokemon">BACK</a>
-			</div>
-		</div>
-	</div>
+	<h1>Edit a Pokemon</h1>
+
+	<form method="POST" action="/pokemon/<%=id%>?_method=PUT">
+		Name: <input type="text" name="name" value="<%=pokemon.name%>"><br/>
+		Photo: 
+		<!-- Not sure how to edit a photo -->
+		<br/>
+		<input type="submit" value="Submit Changes">
+
+
 
 	<!-- JS, Popper.js and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
 </body>
 </html>

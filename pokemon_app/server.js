@@ -22,24 +22,38 @@ app.get('/pokemon', (req, res) => {
 	});
 });
 
+// NEW
+app.get('/pokemon/new', (req, res) => {
+	res.render('new.ejs', {
+	});
+});
+
 // CREATE
 app.post('/pokemon', (req, res) => {
 	Pokemon.push(req.body);
 	res.redirect('/pokemon');
 });
 
-app.get('/pokemon/new', (req, res) => {
-	res.render('new.ejs', {
+// EDIT
+app.get('/pokemon/:id/edit', (req, res) => {
+	res.render('edit.ejs', {
+		pokemon: Pokemon[req.params.id],
+		id: req.params.id,
 	});
 });
-
-// EDIT
 
 // SHOW
 app.get('/pokemon/:id', (req, res) => {
 	res.render('show.ejs', {
-		pokemon: Pokemon[req.params.id]
+		pokemon: Pokemon[req.params.id],
+		id: req.params.id,
 	});
+});
+
+// UPDATE
+app.put('/pokemon/:id', (req, res) => {
+	Pokemon[req.params.id] = req.body;
+	res.redirect('/pokemon');
 });
 
 // DELETE
