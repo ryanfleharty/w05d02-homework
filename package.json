@@ -1,0 +1,23 @@
+{
+  "name": "w05d02-homework",
+  "version": "1.0.0",
+  "description": "Make a Pokemon app that displays data inside server-side rendered views.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natepappenhagen/w05d02-homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natepappenhagen/w05d02-homework/issues"
+  },
+  "homepage": "https://github.com/natepappenhagen/w05d02-homework#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
