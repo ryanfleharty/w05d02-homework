@@ -16,9 +16,19 @@
 	
 	<ul style ="list-style-type: none;">
 		 <% for(let i = 0; i < pokemonList.length; i++) { %>
-		 <li><h3> <a href="/pokemon/<%=i%>" style="text-decoration: none;"> <%= pokemonList[i].name %> </a></h3></li>
+		 <li><h3> <a href="/pokemon/<%=i%>"> <%= pokemonList[i].name %></a></h3>
+		 	<form method= "POST" action="/pokemon/<%=i%>?_method=DELETE">
+		 	<input type="submit">
+		 	</form>
+		 		<a href="/pokemon/<%=i%>/edit">Edit</a>
+		 </li>
+
+
   		<% } %>
   	</ul>
+  	<nav>
+  		 <a href="/pokemon/new">Create a New Pokemon</a>
+  	</nav>
 	
 
 </body>
