@@ -7,37 +7,20 @@
 	<title></title>
 </head>
 <body>
-	<div class="container jumbotron">
-		<div class="row">
-			<div class="container">
-				<h1>Gotta Catch 'Em All</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<h2><%= pokemon.name %></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<img src="<%= pokemon.img %>">
-			</div>
-		</div>
-		<div class="container">
-			<div class="container">
-				<a href="/pokemon/<%=id%>/edit">EDIT</a>
-			</div>
-		</div>
-		<div class="container">
-			<div class="container">
-				<a href="/pokemon">BACK</a>
-			</div>
-		</div>
-	</div>
+<body>
+	<h1>Create a Pokemon!</h1>
+
+	<form action="/pokemon" method="POST">
+		Name: <input type="text" name="name"><br/>
+		Image URL: <input type="text" name="img"><br/>
+		<input type="submit">
+	</form>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
 </body>
 </html>
+
+
+
