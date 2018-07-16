@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 // Show Route
-app.get('/pokemon', (req, res) => {
+app.get('/pokemon/show', (req, res) => {
   // render is when you want to send
   // an ejs template to the client
 
@@ -23,8 +23,8 @@ app.get('/pokemon', (req, res) => {
 app.get("/pokemon/index", (req, res) => {
   res.render('index.ejs', {
     pokemon: pokemon
-  })
-})
+  });
+});
 
 app.get('/pokemon/:id', (req, res) => {
   res.send(req.params.id);
