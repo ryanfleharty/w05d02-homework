@@ -1,7 +1,8 @@
 body {
   text-align: center;
   color: blanchedalmond;
-  background-color: steelblue;
+  /* background-color: steelblue; */
+  background-image: url('https://imgur.com/RQE7tFF.jpg')
 }
 
 img {
@@ -10,8 +11,13 @@ img {
 
 h1, h2 {
   text-align: center;
+  color: white;
 }
 
-a {
+.button {
   text-align: center;
+  color = blue;
+  background-color = red;
+  height: 50px;
+  width: 100px;
 }
