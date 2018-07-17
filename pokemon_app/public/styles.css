@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  color: blanchedalmond;
+  /* background-color: steelblue; */
+  background-image: url('https://imgur.com/RQE7tFF.jpg')
+}
+
+img {
+  /* margin-left: 0%; */
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+.button {
+  text-align: center;
+  color = blue;
+  background-color = red;
+  height: 50px;
+  width: 100px;
+}
