@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>See All The Pokemons!</h1>
+	
+	<ul>
+            <% for(let i = 0; i < pokeList.length; i++){ %>
+              <li>
+                   <a href="/pokemon/<%=i%>"><%=pokeList[i].name%></a>
+                   
+                   <form method="POST" action="/pokemon/<%=i%>?_method=DELETE">
+                   		<input type="Submit" value="Delete">
+                   </form></li>
+                   	
+                   	<a href="/pokemon/<%=i%>/edit">Edit The Thing</a><br/>
+
+            <% } %>
+            		<a href="/pokemon/new">Add A New Thing</a>
+    </ul>
+
+
+</body>
+</html>
